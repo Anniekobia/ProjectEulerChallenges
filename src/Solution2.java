@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class EvenFibonacciSum {
+public class Solution2 {
 
     private static List<Integer> pairs = new ArrayList<Integer>();
     private static List<Integer> checked = new ArrayList<Integer>();

@@ -1,22 +1,18 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LargestPrimeFactor {
+public class Solution3 {
 
     public static int largestPrimeFactor;
 
     public static int LargestPrime(int number) {
         for (int factor = 2; factor < number; factor++) {
             if (number % factor == 0) {
-//                for (int x = 2; x < factor; x++)
-                int x = 2;
-                while (x < factor){
+                for (int x = 2; x < factor; x++) {
                     if (factor % x == 0) {
                         System.out.println("Not Prime " + x);
-                        x++;
                     }else {
                         System.out.println("Prime " + x);
-                        x++;
                         largestPrimeFactor = factor;
                     }
                 }
