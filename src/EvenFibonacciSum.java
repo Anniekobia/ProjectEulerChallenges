@@ -14,7 +14,7 @@ public class EvenFibonacciSum {
         for (int number : pairs) {
             if (!checked.contains(number)) {
                 checked.add(number);
-                if (number < n) {
+                if (number <= n) {
                     if (number % 2 == 0) {
                         sum = sum + number;
                     }
@@ -30,7 +30,7 @@ public class EvenFibonacciSum {
     }
 
     public static void main(String[] args) {
-        sum = EvenFibonacciSum(1, 2, 100);
+        sum = EvenFibonacciSum(1, 2, 4000000);
         System.out.println("Sum: " + sum);
     }
 }
